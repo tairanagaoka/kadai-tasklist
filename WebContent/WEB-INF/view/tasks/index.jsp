@@ -3,7 +3,7 @@
 
  <c:import url="../layout/taskapp.jsp">
      <c:param name="content">
-         <h2>やることリスト</h2>
+         <h2>タスク管理アプリ</h2>
          <ul>
               <c:forEach var ="task" items="${tasks}">
                   <li>

@@ -4,7 +4,7 @@
 <br /> <br />
 
 <input type="hidden" name="_token" value="${_token}" />
-<button type="submit">新しいタスクを追加</button>
+<button type="submit">保存</button>
 <!DOCTYPE html>
 <html lang="ja">
     <head>

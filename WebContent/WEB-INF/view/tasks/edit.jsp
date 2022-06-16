@@ -7,8 +7,18 @@
         <form method="POST" action="${pageContext.request.contextPath}/update">
             <c:import url="form.jsp"></c:import>
         </form>
-
         <p><a href="${pageContext.request.contextPath}/index">リストに戻る</a></p>
+        <p><a href="#" onclick="confirmDestroy();">このタスクを削除する</a></p>
+        <form method="POST" action="${pageContext.request.contextPath}/destroy">
+            <input type="hidden" name="_token" value="${_token}"/>
+        </form>
+        <script>
+        function confirmDestroy(){
+            if(confirm("本当に削除してもよろしいですか？")){
+                document.forms[1].submit();
+            }
+        }
+        </script>
     </c:param>
 </c:import>
 <!DOCTYPE html>
